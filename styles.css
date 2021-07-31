@@ -1,0 +1,160 @@
+:root {
+  --pageFont: 'Inter', sans-serif;
+  --primaryColor: white;
+  --secondaryColor:#7d8189;
+  --tertiaryColor: #65d3f3;
+  --mainContainerColor: #343842;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--pageFont);
+  margin: 0;
+}
+
+body {
+  padding: 15px;
+}
+
+.mainContainer {
+  background-color: var(--mainContainerColor);
+  width: 70%;
+  height: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 5px var(--secondaryColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.navBar {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.title {
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+
+.subtitle {
+  color: var(--tertiaryColor);
+  font-size: small;
+}
+
+.tabsContainer {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+}
+
+.tab {
+  border: none;
+  outline: none;
+  color: var(--secondaryColor);
+  background-color: var(--mainContainerColor);
+  font-size: medium;
+}
+
+.tab:hover {
+  cursor: pointer;
+}
+
+.selected {
+  color: var(--primaryColor);
+}
+
+.tasksInput {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.completedTask {
+  text-decoration: line-through;
+}
+
+.addTaskButton {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--tertiaryColor);
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.taskContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  margin-top: 30px;
+  border-top: 1px solid var(--secondaryColor);
+  color: var(--primaryColor);
+}
+
+u {
+  color: var(--tertiaryColor);
+}
+
+.taskButton {
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+}
+
+.taskButton:hover {
+  cursor: pointer;
+}
+
+.undoButton {
+  margin-right: 10px;
+}
+
+.checkButton {
+  margin-right: 10px;
+}
+
+.trashButton {
+  margin-left: auto;
+}
+
+i {
+  color: var(--secondaryColor);
+  font-size: 20px;
+}
+
+.fa-check-circle:hover {
+  border-radius: 50px;
+  background-color: #6ddf8d;
+  color: var(--primaryColor);
+}
+
+.fa-trash-alt:hover {
+  color: red;
+}
+
+.fa-undo:hover {
+  color: var(--tertiaryColor);
+}
+
+.undisplay {
+  display: none;
+}
